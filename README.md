@@ -10,7 +10,7 @@ Your Userscontroller:
 
 ```php
 
-class ClientsController extends \BaseController {
+class UsersController extends \BaseController {
 
 	/**
 	 * Display a listing of the resource.

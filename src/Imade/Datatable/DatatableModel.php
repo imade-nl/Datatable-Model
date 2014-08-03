@@ -38,7 +38,7 @@ abstract class DatatableModel {
 	/**
 	 * Determine if there was a (ajax) request for data
 	 * I prefer "dataRequest" over "shouldHandle"
-	 * @return [type] [description]
+	 * @return boolean
 	 */
 	public function dataRequest()
 	{

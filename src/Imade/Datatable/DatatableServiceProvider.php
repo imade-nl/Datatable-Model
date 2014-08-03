@@ -11,6 +11,12 @@ class DatatableServiceProvider extends ServiceProvider {
 	 */
 	protected $defer = false;
 
+
+    public function boot()
+    {
+        $this->package('imade/datatable');
+    }
+
 	/**
 	 * Register the service provider.
 	 *

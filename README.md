@@ -30,7 +30,7 @@ This class is required to extend "Imade\Datatable\DatatableModel".
 ```php
 	use Imade\Datatable\DatatableModel;
 
-	class ClientDatatable extends DatatableModel
+	class UserDatatable extends DatatableModel
 	{
 		public $columns = array(
 			'id' => '#',

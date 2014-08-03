@@ -80,7 +80,7 @@ return array(
         |
         */
 
-        'noScript' => false,
+        'noScript' => true,
 
 
         /*

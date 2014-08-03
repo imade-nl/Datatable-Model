@@ -21,7 +21,7 @@ return array(
         |
         */
 
-        'class' => 'table table-striped',
+        'class' => 'table table-striped table-hover',
 
         /*
         |--------------------------------------------------------------------------
@@ -50,10 +50,22 @@ return array(
 
         'options' => array(
 
-            "sPaginationType" => "full_numbers",
+            // "sPaginationType" => "bs_listbox",
 
-            "bProcessing" => false
+            "bProcessing" => false,
 
+            // disable column sorting
+            "aoColumnDefs" => array(
+                array(
+                    'bSortable' => false,
+                    'aTargets' => array(-1)
+                )
+            ),
+
+            // sort first column in descending order
+            "aaSorting" => array(
+                array(0, 'desc') // asc or desc
+            )
         ),
 
         /*

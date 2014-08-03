@@ -1,6 +1,7 @@
 {
     "name": "imade/datatable",
     "description": "A dedicated class (model) to configure the excelent Chumper/Datatable package to keep your controllers as clean as possible.",
+    "keywords": ["Datatable", "Model", "Laravel"],
     "license": "MIT",
     "authors": [
         {

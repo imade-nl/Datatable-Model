@@ -1,5 +1,6 @@
 <?php namespace Imade\Datatable;
 
+use Config;
 use Illuminate\Support\ServiceProvider;
 
 class DatatableServiceProvider extends ServiceProvider {

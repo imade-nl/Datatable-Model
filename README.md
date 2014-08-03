@@ -9,6 +9,9 @@ A dedicated class (model) to configure the excelent Datatable package (https://g
 Your Userscontroller:
 
 ```php
+
+class ClientsController extends \BaseController {
+
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -22,12 +25,16 @@ Your Userscontroller:
 
 		return View::make('resource.index')->withTable($table);
 	}
+}
+
 ```
 
-Dedicated UserDatatable:
+Dedicated UserDatatable.
 This class is required to extend "Imade\Datatable\DatatableModel".
+The two methods "data" and "table" are required.
 
 ```php
+
 	use Imade\Datatable\DatatableModel;
 
 	class UserDatatable extends DatatableModel
@@ -55,6 +62,7 @@ This class is required to extend "Imade\Datatable\DatatableModel".
 				->addColumn( array_values($this->columns) );
 		}
 	}
+
 ```
 
 ##Install

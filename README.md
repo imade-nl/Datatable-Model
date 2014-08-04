@@ -1,7 +1,7 @@
 Datatable Model
 ===============
 
-A dedicated class (model) to configure the excelent Datatable package (https://github.com/Chumper/Datatable) to keep your controllers as clean as possible.
+A dedicated class (model) to configure the Chumper's Datatable package for Laravel (https://github.com/Chumper/Datatable) to keep your controllers as clean as possible.
 
 
 ##Example
@@ -71,12 +71,5 @@ The two methods "data" and "table" are required.
 2. Require Imade/Datatable in your composer.json:
 
 ```php
-	"imade/datatable": "dev-master"
-```
-
-3. Add the serviceprovider to your config/app.php
-
-```php
-	// providers array:
-    'Imade\Datatable\DatatableServiceProvider',
+	"imade/datatable-model": "dev-master"
 ```

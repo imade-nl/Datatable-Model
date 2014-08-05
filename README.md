@@ -1,7 +1,7 @@
 Datatable Model
 ===============
 
-A dedicated class (model) to configure the Chumper's Datatable package for Laravel (https://github.com/Chumper/Datatable) to keep your controllers as clean as possible.
+A dedicated class (model) to configure Chumper's Datatable package for Laravel (https://github.com/Chumper/Datatable) to keep your controllers as clean as possible.
 
 
 ##Example

@@ -42,7 +42,7 @@ The two methods "data" and "table" are required.
 		public $columns = array(
 			'id' => '#',
 			'name' => 'Naam',
-			'email' => 'E-mail',
+			'email' => 'E-mail'
 		);
 
 

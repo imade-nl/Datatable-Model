@@ -73,9 +73,9 @@ abstract class DatatableModel {
 	 */
 	public function routeCreate()
 	{
-        $action = Route::currentRouteAction();
+		$action = Route::currentRouteAction();
 
-        $controllerName = strstr($action, '@', true);
+		$controllerName = strstr($action, '@', true);
 
 		return action($controllerName . '@create');
 	}

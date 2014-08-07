@@ -1,6 +1,6 @@
 <?php namespace Imade\Datatable;
 
-use Datatable;
+use Datatable, Route;
 
 /**
  * Class Datatable
@@ -66,4 +66,18 @@ abstract class DatatableModel {
 
 		return $this->table->script();
 	}
+
+	/**
+	 * Returns the create url for this resource
+	 * @return string
+	 */
+	public function routeCreate()
+	{
+        $action = Route::currentRouteAction();
+
+        $controllerName = strstr($action, '@', true);
+
+		return action($controllerName . '@create');
+	}
+
 }

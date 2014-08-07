@@ -5,22 +5,22 @@ use Chumper\Datatable\Columns\BaseColumn;
 
 class ActionsColumn extends BaseColumn {
 
-    private $class_name;
+    private $controllerName;
 
     function __construct()
     {
         parent::__construct('actions');
 
         $action = Route::currentRouteAction();
-        $this->class_name = strstr($action, '@', true);
+        $this->controllerName = strstr($action, '@', true);
     }
 
 
     public function run($model)
     {
-        $actions = Form::open(array('action' =>  array($this->class_name . '@destroy', $model->id), 'class' => 'pull-right'));
+        $actions = Form::open(array('action' =>  array($this->controllerName . '@destroy', $model->id), 'class' => 'pull-right'));
 
-        $actions .= '<a class="btn btn-link btn-lg" href="'. action($this->class_name . '@edit', array('id' => $model->id)) .'"><i class="fa fa-pencil"></i></a>';
+        $actions .= '<a class="btn btn-link btn-lg" href="'. action($this->controllerName . '@edit', array('id' => $model->id)) .'"><i class="fa fa-pencil"></i></a>';
 
         $actions .= '&nbsp;';
 

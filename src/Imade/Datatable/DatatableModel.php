@@ -1,6 +1,6 @@
 <?php namespace Imade\Datatable;
 
-use Datatable, Config;
+use Datatable;
 
 /**
  * Class Datatable

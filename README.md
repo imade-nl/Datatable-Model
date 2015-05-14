@@ -3,7 +3,7 @@ Datatable Model
 
 This is a __laravel 5 package__ for the server and client side of datatables at http://datatables.net/
 
-A dedicated class (model) to configure Datatables.net for Laravel (https://github.com/Chumper/Datatable) to keep your controllers as clean as possible.
+A dedicated class (model) to configure Datatables.net for Laravel to keep your controllers as clean as possible.
 
 
 ##Example
